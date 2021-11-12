@@ -1,0 +1,271 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Midterm Exam.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMBy26LnEx7QeEnJIHGxlHC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MiguelRoiNava/Linear-Algebra-58020/blob/main/Midterm_Exam\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jaKcGYh--u03"
+      },
+      "source": [
+        "Number 1\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LLRroGXK9LH6",
+        "outputId": "d57791da-0863-4047-de17-35f0a4f5f73d"
+      },
+      "source": [
+        "import numpy as np\n",
+        "A = np.array([[2,4,6,8,10],[1,3,5,7,9],[12,14,16,18,20],[11,13,15,17,19],[0,1,2,3,4]])\n",
+        "print(A)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 2  4  6  8 10]\n",
+            " [ 1  3  5  7  9]\n",
+            " [12 14 16 18 20]\n",
+            " [11 13 15 17 19]\n",
+            " [ 0  1  2  3  4]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UyYeqALmCEmq"
+      },
+      "source": [
+        "Number 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9VD0VIEi9cTz",
+        "outputId": "015aed98-2153-4c4e-eafb-32ee8cb14951"
+      },
+      "source": [
+        "import numpy as np \n",
+        "A = np.array([[1,1,1,1],[0,1,1,1],[0,0,1,1],[0,0,0,1]])\n",
+        "print(A)"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 1 1 1]\n",
+            " [0 1 1 1]\n",
+            " [0 0 1 1]\n",
+            " [0 0 0 1]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3juZwoduA9a5"
+      },
+      "source": [
+        "Number 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SEMtXbbo9cbJ",
+        "outputId": "3bd2e883-570b-4494-f748-27b376b84573"
+      },
+      "source": [
+        "import numpy as np\n",
+        "A = np.array([[2,3,4,5,6],[3,2,3,4,5],[4,3,2,3,4],[5,4,3,2,3],[6,5,4,3,2]])\n",
+        "print(A)"
+      ],
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[2 3 4 5 6]\n",
+            " [3 2 3 4 5]\n",
+            " [4 3 2 3 4]\n",
+            " [5 4 3 2 3]\n",
+            " [6 5 4 3 2]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hCnS9MUd9ddM"
+      },
+      "source": [
+        "Number 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FbycUcut9cjq",
+        "outputId": "fa866d32-919f-4b82-983c-3f2b61620627"
+      },
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "C = np.array ([[1,2,3],[2,3,3],[3,4,-2]])\n",
+        "\n",
+        "invC = np.linalg.inv(C) #Inverse of Matrix C\n",
+        "\n",
+        "print(invC)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[-3.6  3.2 -0.6]\n",
+            " [ 2.6 -2.2  0.6]\n",
+            " [-0.2  0.4 -0.2]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-M1H78ZcCYZA"
+      },
+      "source": [
+        "Number 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lGjwJEhw-6Pc",
+        "outputId": "99ee62a4-f0b6-471b-9376-0eca07af42c3"
+      },
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "C = np.array ([[1,2,3],[2,3,3],[3,4,-2]])\n",
+        "\n",
+        "detOfC = np.linalg.det(C)\n",
+        "\n",
+        "print(\"Determinant of the given matrix in Question 4:\")\n",
+        "print(int(detOfC))"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Determinant of the given matrix in Question 4:\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oNG0UZjJ-_Qy"
+      },
+      "source": [
+        "Number 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6RqBRnFY-6AL",
+        "outputId": "e1098505-b10c-42ab-8e69-e2b87dfe9a86"
+      },
+      "source": [
+        "import numpy as np \n",
+        "\n",
+        "Equations = np.array([[5,4,1],\n",
+        "                      [10,9,4],\n",
+        "                      [10,13,15]])\n",
+        "\n",
+        "Constants = np.array([[[3.4],\n",
+        "                       [8.8],\n",
+        "                       [19.2]]])\n",
+        "\n",
+        "roots = np.linalg.inv(Equations) @ Constants\n",
+        "\n",
+        "print(roots)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[[0.2]\n",
+            "  [0.4]\n",
+            "  [0.8]]]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
